@@ -8,14 +8,17 @@ export const metadata: Metadata = {
   description: "Genius Car",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>
         <div className="site-wrapper">
           <Navbar />
           {children}
-          <div className="h-[40px]" />
           <Footer />
         </div>
       </body>
