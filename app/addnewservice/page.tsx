@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function checkout() {
+export default function addnewservice() {
     return (
         <main className="relative mx-auto h-[2950px] w-[1440px]">
             {/* Banner */}
@@ -100,14 +100,22 @@ export default function checkout() {
                 </div>
 
                 {/* 4th Layout */}
-                <div className="absolute left-[97px] top-[539px] h-[64px] w-[946px] rounded-[10px] bg-[#FF3811]">
+                {/* Submit Layout */}
+                {/* Submit Layout */}
+                <div className="group absolute left-[97px] top-[539px] h-[64px] w-[946px] cursor-pointer overflow-hidden rounded-[10px] bg-[#FF3811] transition-[box-shadow] duration-300 ease-out hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.22),inset_0_-1px_0_rgba(0,0,0,0.10)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.14)]">
 
-                    {/* Order Confirm */}
-                    <div className="absolute left-[404px] top-[17px] h-[30px] w-[139px]">
+                    {/* Premium Surface */}
+                    <div className="pointer-events-none absolute inset-0 rounded-[10px] bg-gradient-to-b from-white/[0.12] via-transparent to-black/[0.06] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100"></div>
+
+                    {/* Soft Reflection */}
+                    <div className="pointer-events-none absolute -left-[35%] top-0 h-full w-[35%] skew-x-[-20deg] bg-white/[0.10] opacity-0 transition-all duration-700 ease-out group-hover:left-[100%] group-hover:opacity-100"></div>
+
+                    {/* Submit Button */}
+                    <button type="submit" aria-label="Submit" className="absolute left-[404px] top-[17px] z-10 h-[30px] w-[139px] cursor-pointer rounded-[4px] bg-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-inset">
                         <span className="font-['Inter'] text-[20px] font-semibold leading-[30px] tracking-[0%] text-white">
-                            Order Confirm
+                            Submit
                         </span>
-                    </div>
+                    </button>
 
                 </div>
 

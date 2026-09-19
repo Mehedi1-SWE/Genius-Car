@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function checkout() {
     return (
@@ -100,14 +101,20 @@ export default function checkout() {
                 </div>
 
                 {/* 4th Layout */}
-                <div className="absolute left-[97px] top-[539px] h-[64px] w-[946px] rounded-[10px] bg-[#FF3811]">
+                <div className="group absolute left-[97px] top-[539px] h-[64px] w-[946px] cursor-pointer overflow-hidden rounded-[10px] bg-[#FF3811] transition-[box-shadow] duration-300 ease-out hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.22),inset_0_-1px_0_rgba(0,0,0,0.10)] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.14)]">
+
+                    {/* Premium Surface - Full Layout */}
+                    <div className="pointer-events-none absolute inset-0 rounded-[10px] bg-gradient-to-b from-white/[0.12] via-transparent to-black/[0.06] opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100"></div>
+
+                    {/* Soft Reflection - Full Layout */}
+                    <div className="pointer-events-none absolute -left-[35%] top-0 h-full w-[35%] skew-x-[-20deg] bg-white/[0.10] opacity-0 transition-all duration-700 ease-out group-hover:left-[100%] group-hover:opacity-100"></div>
 
                     {/* Order Confirm */}
-                    <div className="absolute left-[404px] top-[17px] h-[30px] w-[139px]">
-                        <span className="font-['Inter'] text-[20px] font-semibold leading-[30px] tracking-[0%] text-white">
+                    <Link href="/addnewservice" aria-label="Order Confirm" className="absolute left-[404px] top-[17px] z-10 flex h-[30px] w-[139px] cursor-pointer items-center justify-center rounded-[4px] bg-transparent focus:outline-none">
+                        <span className="whitespace-nowrap font-['Inter'] text-[20px] font-semibold leading-[30px] tracking-[0%] text-white">
                             Order Confirm
                         </span>
-                    </div>
+                    </Link>
 
                 </div>
 

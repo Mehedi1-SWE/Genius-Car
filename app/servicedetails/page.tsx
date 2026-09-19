@@ -161,10 +161,13 @@ export default function ServiceDetails() {
 
             </div>
 
+            ```tsx
             {/* Right Layout - 1st Layout */}
             <div className="absolute left-[926px] top-[1137px] h-[262px] w-[364px] rounded-[10px] bg-[#151515]">
                 {/* Inner Layout 1 - Download */}
-                <div className="absolute left-[40px] top-[40px] h-[30px] w-[123px]"><h2 className="m-0 font-['Inter'] text-[25px] font-bold leading-[100%] tracking-[0%] text-[#FFFFFF]">Download</h2></div>
+                <div className="absolute left-[40px] top-[40px] h-[30px] w-[123px]">
+                    <h2 className="m-0 font-['Inter'] text-[25px] font-bold leading-[100%] tracking-[0%] text-[#FFFFFF]">Download</h2>
+                </div>
 
                 {/* Inner Layout 2 */}
                 <div className="absolute left-[40px] top-[90px] h-[56px] w-[284px]">
@@ -173,21 +176,28 @@ export default function ServiceDetails() {
                         <div className="absolute left-[0px] top-[8px] h-[30px] w-[30px]">
                             <Image src="/Brochure.png" alt="Our Brochure" width={30} height={30} className="h-[30px] w-[30px] object-contain" />
                         </div>
+
                         <div className="absolute left-[40px] top-[0px] h-[46px] w-[116px]">
-                            <div className="absolute left-[0px] top-[0px] h-[22px] w-[116px]"><span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-[#FFFFFF]">Our Brochure</span></div>
-                            <div className="absolute left-[0px] top-[27px] h-[19px] w-[76px]"><span className="font-['Inter'] text-[16px] font-normal leading-[100%] tracking-[0%] text-[#A2A2A2]">Download</span></div>
+                            <div className="absolute left-[0px] top-[0px] h-[22px] w-[116px]">
+                                <span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-[#FFFFFF]">Our Brochure</span>
+                            </div>
+
+                            <div className="absolute left-[0px] top-[27px] h-[19px] w-[76px]">
+                                <span className="font-['Inter'] text-[16px] font-normal leading-[100%] tracking-[0%] text-[#A2A2A2]">Download</span>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Right Layout */}
-                    <div className="absolute left-[228px] top-[0px] h-[56px] w-[56px] bg-[#FF3811]">
-                        <div className="absolute left-[16px] top-[16px] h-[24px] w-[24px]"><Image src="/WRA.png" alt="Download" width={24} height={24} className="h-[24px] w-[24px] object-contain" /></div>
-                    </div>
+                    {/* Right Layout - Download Button */}
+                    <a href="/our-brochure.pdf" download="Our-Brochure.pdf" aria-label="Download Our Brochure" className="group absolute left-[228px] top-[0px] h-[56px] w-[56px] bg-[#FF3811] transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-[0_8px_20px_rgba(255,56,17,0.35)] active:scale-95">
+                        <div className="absolute left-[16px] top-[16px] h-[24px] w-[24px] transition-transform duration-300 ease-out group-hover:scale-110">
+                            <Image src="/WRA.png" alt="Download" width={24} height={24} className="h-[24px] w-[24px] object-contain" />
+                        </div>
+                    </a>
                 </div>
 
-
                 {/* Inner Layout 3 */}
-                <div className="absolute left-[40px] top-[166px] h-[56px] w-[284px] ">
+                <div className="absolute left-[40px] top-[166px] h-[56px] w-[284px]">
                     {/* Left Layout */}
                     <div className="absolute left-[0px] top-[5px] h-[46px] w-[188px]">
                         <div className="absolute left-[0px] top-[8px] h-[30px] w-[30px]">
@@ -197,18 +207,25 @@ export default function ServiceDetails() {
 
                     {/* Right Layout */}
                     <div className="absolute left-[40px] top-[5px] h-[46px] w-[148px]">
-                        <div className="absolute left-[0px] top-[0px] h-[22px] w-[148px]"><span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-[#FFFFFF]">Company Details</span></div>
-                        <div className="absolute left-[0px] top-[27px] h-[19px] w-[76px]"><span className="font-['Inter'] text-[16px] font-normal leading-[100%] tracking-[0%] text-[#A2A2A2]">Download</span></div>
-                    </div>
+                        <div className="absolute left-[0px] top-[0px] h-[22px] w-[148px]">
+                            <span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-[#FFFFFF]">Company Details</span>
+                        </div>
 
-                    {/* Right Layout */}
-                    <div className="absolute left-[228px] top-[0px] h-[56px] w-[56px] bg-[#FF3811]">
-                        <div className="absolute left-[16px] top-[16px] h-[24px] w-[24px]">
-                            <Image src="/WRA.png" alt="Download Company Details" width={24} height={24} className="h-[24px] w-[24px] object-contain" />
+                        <div className="absolute left-[0px] top-[27px] h-[19px] w-[76px]">
+                            <span className="font-['Inter'] text-[16px] font-normal leading-[100%] tracking-[0%] text-[#A2A2A2]">Download</span>
                         </div>
                     </div>
+
+                    {/* Right Layout - Download Button */}
+                    <a href="/company-details.pdf" download="Company-Details.pdf" aria-label="Download Company Details" className="group absolute left-[228px] top-[0px] h-[56px] w-[56px] bg-[#FF3811] transition-all duration-300 ease-out hover:scale-[1.05] hover:shadow-[0_8px_20px_rgba(255,56,17,0.35)] active:scale-95">
+                        <div className="absolute left-[16px] top-[16px] h-[24px] w-[24px] transition-transform duration-300 ease-out group-hover:scale-110">
+                            <Image src="/WRA.png" alt="Download Company Details" width={24} height={24} className="h-[24px] w-[24px] object-contain" />
+                        </div>
+                    </a>
                 </div>
             </div>
+            ```
+
 
             {/* Right Layout - 2nd Layout */}
             {/* Right Layout - 2nd Layout */}
@@ -254,12 +271,13 @@ export default function ServiceDetails() {
 
                         </div>
 
+
                         {/* 2nd Inner Layout - Get A Quote */}
-                        <div className="absolute left-[50px] top-[98px] h-[56px] w-[170px] rounded-[5px] bg-[#FF3811]">
-                            <div className="absolute left-[32px] top-[17px] h-[22px] w-[107px]">
-                                <span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-center text-[#FFFFFF]">Get A Quote</span>
+                        <Link href="/quote" aria-label="Get a Quote" className="group absolute left-[50px] top-[98px] h-[56px] w-[170px] rounded-[5px] bg-[#FF3811] shadow-[0_4px_12px_rgba(255,56,17,0.15)] transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-[#ff4a27] hover:shadow-[0_8px_20px_rgba(255,56,17,0.28)] active:translate-y-[0px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3811]">
+                            <div className="absolute left-[32px] top-[17px] flex h-[22px] w-[107px] items-center justify-center">
+                                <span className="whitespace-nowrap font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-[#FFFFFF] transition-all duration-300 group-hover:tracking-[0.2px]">Get A Quote</span>
                             </div>
-                        </div>
+                        </Link>
 
                     </div>
 
@@ -270,7 +288,11 @@ export default function ServiceDetails() {
             <div className="absolute left-[926px] top-[1948px] h-[42px] w-[245px]"><span className="font-['Inter'] text-[35px] font-bold leading-[100%] tracking-[0%] text-[#151515]">Price $250.00</span></div>
 
             {/* Right Layout - Checkout Button */}
-            <div className="absolute left-[926px] top-[2020px] h-[56px] w-[364px] rounded-[5px] bg-[#FF3811]"><div className="absolute left-[102px] top-[17px] h-[22px] w-[161px]"><span className="font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-center text-[#FFFFFF]">Proceed Checkout</span></div></div>
+            <Link href="/checkout" aria-label="Proceed to Checkout" className="group absolute left-[926px] top-[2020px] h-[56px] w-[364px] rounded-[5px] bg-[#FF3811] shadow-[0_4px_12px_rgba(255,56,17,0.15)] transition-all duration-300 ease-out hover:-translate-y-[2px] hover:bg-[#ff4a27] hover:shadow-[0_8px_20px_rgba(255,56,17,0.28)] active:translate-y-[0px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3811]">
+                <div className="absolute left-[102px] top-[17px] h-[22px] w-[161px]">
+                    <span className="whitespace-nowrap font-['Inter'] text-[18px] font-semibold leading-[100%] tracking-[0%] text-center text-[#FFFFFF] transition-all duration-300 group-hover:tracking-[0.2px]">Proceed Checkout</span>
+                </div>
+            </Link>
 
             {/* Left Layout */}
             <div className="absolute left-[150px] top-[1289px] h-[1561px] w-[752px]">
