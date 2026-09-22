@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function CartDetailsNavbar() {
     return (
-        <nav>
+        <nav className="relative mx-auto h-[136.7755px] w-[1440px]">
+
             {/* Left Logo Layout */}
             <div className="absolute left-[150px] top-[50px] h-[86.7755px] w-[107px]">
 
@@ -22,7 +23,7 @@ export default function CartDetailsNavbar() {
             </div>
 
             {/* Right Layout */}
-            <div className="absolute left-[652px] top-[82px] h-[22px] w-[638px] ">
+            <div className="absolute left-[652px] top-[82px] h-[22px] w-[638px]">
 
                 {/* Left Layout */}
                 <div className="absolute left-[0px] top-[0px] h-[22px] w-[432px]">

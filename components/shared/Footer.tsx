@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="relative h-[477px] w-[1440px] bg-[rgba(21,21,21,1)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
+        <footer className="relative mx-auto h-[477px] w-[1440px] bg-[rgba(21,21,21,1)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
             {/* 1st Layout */}
             <div className="absolute left-[150px] top-[130px] h-[216.7114px] w-[283px]">
                 {/* 1st Child Layout */}

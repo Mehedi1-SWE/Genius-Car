@@ -157,11 +157,14 @@ export default function ServiceDetails() {
 
                 </div>
 
-
-
+            </div>
+            {/* Description Layout */}
+            <div className="absolute left-[150px] top-[1751px] h-[120px] w-[752px]">
+                <span className="font-['Inter'] text-[16px] font-normal leading-[30px] tracking-[0%] capitalize text-[#737373]">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+                </span>
             </div>
 
-            ```tsx
             {/* Right Layout - 1st Layout */}
             <div className="absolute left-[926px] top-[1137px] h-[262px] w-[364px] rounded-[10px] bg-[#151515]">
                 {/* Inner Layout 1 - Download */}
@@ -224,7 +227,7 @@ export default function ServiceDetails() {
                     </a>
                 </div>
             </div>
-            ```
+
 
 
             {/* Right Layout - 2nd Layout */}
