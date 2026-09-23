@@ -1,6 +1,6 @@
 export default function PopularProducts() {
     return (
-        <main className="relative mx-auto h-[4400px] w-[1440px]">
+        <main className="absolute left-[0px] top-[0px] h-[4400px] w-[1440px]">
 
             {/* 1st Layout - Popular Products */}
             <div className="absolute left-[635px] top-[3168px] h-[24px] w-[169px]">

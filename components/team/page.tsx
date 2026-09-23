@@ -1,6 +1,6 @@
 export default function Team() {
     return (
-        <main className="relative mx-auto h-[5200px] w-[1440px]">
+        <main className="absolute left-[0px] top-[0px] h-[5200px] w-[1440px]">
 
             {/* 1st Layout - Team Section */}
             <div className="absolute left-[361px] top-[4434px] h-[178px] w-[717px]">

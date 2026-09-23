@@ -8,7 +8,7 @@ import CoreFeatures from "@/components/coreFeatures/page";
 import Testimonial from "@/components/testimonial/page";
 export default function Home() {
     return (
-        <>
+        <main className="relative mx-auto h-[6400px] w-[1440px]">
             <Hero />
             <AboutUs />
             <Service />
@@ -18,6 +18,6 @@ export default function Home() {
             <CoreFeatures />
             <Testimonial />
 
-        </>
+            /</main>
     );
 }
